@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": false,
+        "workbench.colorCustomizations" : {
+        "sideBar.background": "#111111",
+        "terminal.foreground" : "#fdfffe",
+        "terminal.background" : "#160404"
+    },
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/usr/bin/python3",
+    
+    
+}

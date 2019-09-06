@@ -1,0 +1,27 @@
+{{ header }}
+<div class="content-top">
+	<div class="home-container">
+		{{ content_top }}
+	</div>
+</div>
+
+<div class="row home_row">
+	{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">
+		
+			{{ content_bottom }}
+		
+	</div>
+    {{ column_right }}
+</div>
+
+<span class="testimonial_default_width" style="display: none; visibility: hidden;"></span>
+
+{{ footer }}
